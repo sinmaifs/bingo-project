@@ -1,30 +1,16 @@
 # 台彩 Bingo!Bingo! Analytics.
 
-Not finished yet!3
+Not finished yet!
 
-# Create sql.inc.php
+# Create config.php
 
 ```php
-$host = "localhost";
-$dbuser = ""; //DB Account
+$host = "localhost"; //Connect IP
+$dbuser = "root"; //DB Account
 $dbpass = ""; //DB Password
-$dbname = ""; //DB NAME
+$dbname = "bingo"; //DB Name
 
-$link = mysqli_connect($host,$dbuser,$dbpass, $dbname);
-if (mysqli_connect_errno()) {
-	printf("Connect failed: %s\n", mysqli_connect_error());
-	exit();
-}
-
-mysqli_set_charset($link, "utf8");
-header("Content-Type:text/html; charset=utf-8");
-date_default_timezone_set('Asia/Taipei');
-```
-
-# Edit update.php
-
-```php
-$d = "20220510"; // YYYYMMDD date for today
+$Any_date = "20220513"; // YYYYMMDD Date the data needs to be analyzed EX:20220510
 ```
 
 # Demo
