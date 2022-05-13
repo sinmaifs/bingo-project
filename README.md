@@ -2,7 +2,7 @@
 
 Not finished yet!
 
-# Create config.php
+# config.php
 
 ```php
 $host = "localhost"; //Connect IP
