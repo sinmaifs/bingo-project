@@ -28,6 +28,9 @@ class BS{
      	$this->BS_arr = $BSarr;
      	$this->BS_txt = $BStxt;
      }
+     function set_Total_part(){
+     	$this->total_part = count($this->in_data);
+     }
 
      /******
       * 取得 (Total Bs) , 大 , 小 局數 substr_count
@@ -169,21 +172,5 @@ class BS{
           	'vvov'=>$vvov
           );
      }
-
-
-
-
-
-
-
-
-
-
-     function set_Total_part(){
-     	$this->total_part = count($this->in_data);
-     }
-	function showData() {
-	     print_r($this->in_data);
-	}
 }
 ?>
